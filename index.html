@@ -16,40 +16,195 @@
         <title>Cloudboost | Codeboost</title>
 
         <link rel="stylesheet" href="./css/main.min.css" />
+        <!-- AOS ANIMATE -------------------------------------------- -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <!-- -------------------------------------------------------- -->
     </head>
+
     <body>
-        <div class="container">
-            <a href="#" class="btn-primary">Teste Grátis</a>
-            <button class="btn-primary">Teste Grátis</button>
+        <header data-aos="fade-up">
+            <div class="container">
+                <div class="content-header">
+                    <a href="#" class="logo">
+                        <img src="./imgs/logo.svg" alt="Logo Cloudboost" />
+                    </a>
+                    <div class="left-content">
+                        <a href="#">
+                            <img src="./imgs/icon-help.svg" alt="Icon Help" />
+                            <span>Do you need help?</span>
+                        </a>
+                        <button class="btn-primary">Free Trial</button>
+                    </div>
+                    <button class="btn-mobile">
+                        <img
+                            src="./imgs/icon-hamburger.svg"
+                            alt="Menu Mobile"
+                        />
+                    </button>
+                </div>
+            </div>
+        </header>
 
-            <form action="" class="form-email">
-                <input type="email" placeholder="Digite seu e-mail" />
-                <button type="submit" class="btn-primary">Teste Grátis</button>
-            </form>
-
-            <div class="card-recurse">
-                <div class="icon">
+        <section class="s-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="left" data-aos="fade-right">
+                        <h1>
+                            The perfect email marketing tool for
+                            <span>your business!</span>
+                        </h1>
+                        <p>
+                            Harness the potential of email marketing to boost
+                            sales and strengthen your relationship with
+                            customers.
+                        </p>
+                        <form action="" class="form-email">
+                            <input
+                                type="email"
+                                placeholder="Digite seu e-mail"
+                            />
+                            <button type="submit" class="btn-primary">
+                                Free Trial
+                            </button>
+                        </form>
+                        <ul>
+                            <li>
+                                <img src="./imgs/google.svg" alt="Google" />
+                            </li>
+                            <li>
+                                <img src="./imgs/facebook.svg" alt="Facebook" />
+                            </li>
+                            <li>
+                                <img
+                                    src="./imgs/instagram.svg"
+                                    alt="Instagram"
+                                />
+                            </li>
+                        </ul>
+                        <div class="review">
+                            <img src="./imgs/users.png" alt="Users" />
+                            <div>
+                                <img src="./imgs/icon-star.svg" alt="Star" />
+                                <span>(99K <strong>Reviews</strong>)</span>
+                            </div>
+                        </div>
+                    </div>
                     <img
-                        src="./imgs/icone-reach-more.svg"
-                        alt="Icon Reach More"
+                        src="./imgs/main-image.png"
+                        alt="Main Image"
+                        data-aos="fade-left"
+                    />
+                    <img
+                        src="./imgs/main-image-mobile.png"
+                        alt="Main Image Mobile"
+                        class="img-mobile"
+                        data-aos="fade-up"
                     />
                 </div>
-                <div class="text">
-                    <h6>Alcance mais</h6>
-                    <p>
-                        Aumente o tráfego do seu site e suas vendas utilizando o
-                        e-mail marketing.
-                    </p>
-                </div>
             </div>
+        </section>
 
-            <div class="review">
-                <img src="./imgs/users.png" alt="Users" />
-                <div>
-                    <img src="./imgs/icon-star.svg" alt="Star" />
-                    <span>(99k <strong>Reviews</strong>)</span>
+        <section class="s-recurses">
+            <div class="container">
+                <div class="top" data-aos="fade-right">
+                    <h3>
+                        Discover the features of the CloudBoost email marketing
+                        tool.
+                    </h3>
+                    <p>Over 5,000 companies using it ✌️</p>
+                </div>
+                <div class="all" data-aos="fade-up">
+                    <div class="card-recurse">
+                        <div class="icon">
+                            <img
+                                src="./imgs/icone-reach-more.svg"
+                                alt="Reach More"
+                            />
+                        </div>
+                        <div class="text">
+                            <h6>Reach further</h6>
+                            <p>
+                                Increase your website traffic and sales by using
+                                email marketing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-recurse">
+                        <div class="icon">
+                            <img
+                                src="./imgs/icon-spend-less.svg"
+                                alt="Spend Less"
+                            />
+                        </div>
+                        <div class="text">
+                            <h6>Spend less</h6>
+                            <p>
+                                With the tool, you can send bulk messages,
+                                spending less than R$ 0.01 per message!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-recurse">
+                        <div class="icon">
+                            <img
+                                src="./imgs/icon-autonomy.svg"
+                                alt="Autonomy"
+                            />
+                        </div>
+                        <div class="text">
+                            <h6>Autonomy and results</h6>
+                            <p>
+                                Create contact lists, campaigns, and also
+                                analyze the results of each send.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-recurse">
+                        <div class="icon">
+                            <img
+                                src="./imgs/icon-template.svg"
+                                alt="Template"
+                            />
+                        </div>
+                        <div class="text">
+                            <h6>Boost Templates</h6>
+                            <p>
+                                Ready-made templates for every type of email:
+                                newsletters, launches, sales campaigns, and
+                                others.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="s-marketing">
+            <div class="container">
+                <div class="box" data-aos="zoom-in">
+                    <h2>
+                        Boost your results with the Perfect Email Marketing
+                        Tool!
+                    </h2>
+                    <p>
+                        Increase conversions, nurture relationships, and achieve
+                        success. Try it now!
+                    </p>
+                    <a href="#" class="btn-primary">Free Trial</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AOS ANIMATE -------------------------------------------- -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+            })
+        </script>
+        <!-- -------------------------------------------------------- -->
     </body>
 </html>

@@ -19,8 +19,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(255, 255, 255, 0.04);
     padding: 0.4rem 0.4rem 0.4rem 2.4rem;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     width: 100%;
     max-width: 52.1rem;
     gap: 1.6rem;
@@ -34,18 +33,26 @@
             color: $gray-300;
         }
     }
+    @include responsivo("mobile") {
+        justify-content: space-between;
+        .btn-primary {
+            padding: 1.2rem 2rem;
+            font-size: 1.6rem;
+        }
+        input {
+            max-width: 15rem;
+        }
+    }
 }
 
 .card-recurse {
     width: 100%;
-    max-width: 22.5rem;
+    max-width: 26.5rem;
     .icon {
         width: 4.8rem;
         height: 4.8rem;
         padding: 1.1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-total-center;
         border-radius: 0.4rem;
         border: 1px solid rgba(255, 255, 255, 0.03);
         background: rgba(255, 255, 255, 0.03);
@@ -65,11 +72,18 @@
             line-height: 150%;
         }
     }
+    @include responsivo("laptop") {
+        max-width: 100%;
+        text-align: center;
+        .icon {
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 .review {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     gap: 0.8rem;
 
     & > img {
@@ -77,8 +91,7 @@
         max-width: 12.4rem;
     }
     & > div {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         gap: 0.4rem;
         font-size: 1.8rem;
         line-height: 150%;
